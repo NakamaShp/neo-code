@@ -38,7 +38,7 @@ export default function RootLayout({
             </div>
 
             {/* Kanan: SearchModal dan Header */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-6">
               <SearchModal />
               <Header />
             </div>
