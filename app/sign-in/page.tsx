@@ -4,9 +4,9 @@ export default function Page() {
 
   return (
    <div className="min-h-screen flex items-center justify-center bg-black">
-      <SignIn  
-      redirectUrl="/dashboard"
+      <SignIn fallbackRedirectUrl={"/dashboard"}
       />
+      <button>DashBoard Admin</button>
     </div>
   )
 }

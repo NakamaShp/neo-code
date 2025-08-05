@@ -5,7 +5,10 @@ import { SignInButton, SignUpButton, SignedOut, UserButton } from '@clerk/nextjs
 
 export default function Header() {
   const pathname = usePathname()
-  const hideAuthButtons = pathname.startsWith('/sign-in') || pathname.startsWith('/sign-up')
+  const hideAuthButtons = 
+  pathname.startsWith('/sign-in') || 
+  pathname.startsWith('/sign-up') || 
+  pathname.startsWith('/dashboard')
 
   if (hideAuthButtons) return null
 
